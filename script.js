@@ -1,14 +1,18 @@
 console.log("Hey this works!");
 
-function mystery() {
-  var secret = 6;
+var hidden = mystery();
+var result = hidden(3);
+document.write(result);
+
+function mystery(input) {
+  var secret = 5;
   function mystery2(multiplier) {
-    multiplier *= 3;
+    multiplier *= input;
     return secret * multiplier;
   }
   return mystery2;
 }
 
-var hidden = mystery();
-var result = hidden(3);
+var hidden = mystery(4);
+var result = hidden(2);
 document.write(result);
