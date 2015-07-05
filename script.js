@@ -11,4 +11,4 @@ function mystery() {
 
 var hidden = mystery();
 var result = hidden(3);
-console.log(result);
+document.write(result);
